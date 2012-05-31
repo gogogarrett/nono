@@ -5,19 +5,19 @@ module ProfanityFilter
   end
 
   module ClassMethods
-    # check_profanity places: [:title, :body, :excerpt], strength: :strong
+    # check_profanity places: [:title, :body, :excerpt]
     require 'sanitize' 
     before_save :check_words
 
-    def check_profanity section, strength
+    def check_profanity section
       section[1].each do |p|
-        if check_banned_words p, strength
+        if check_banned_words p
           self.raise_error and return false
         end
       end
     end
 
-    def check_banned_words section, strength
+    def check_banned_words section
       @word = []
       banned_words = ProfanityFitler::WORDS
 
@@ -39,7 +39,7 @@ module ProfanityFilter
     end
 
     def raise_error
-      errors.add(:base, "Profanity found. Program manager has been notified.")
+      errors.add(:base, "Profanity found.")
     end
 
   end

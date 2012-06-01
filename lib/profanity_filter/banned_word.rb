@@ -35,7 +35,7 @@ module ProfanityFilter
 		 nigg3r nigg4h nigga niggah niggas niggaz nigger  niggers  nob  nobjokey  nobhead nobjocky nobjokey 
 		 numbnuts nutsack  orgasim   orgasims  orgasm  orgasms  p0rn pawn pecker penis penisfucker phonesex 
 		 phuck phuk phuked phuking phukked phukking phuks phuq pigfucker pimpis piss pissed pisser pissers  
-		 pisses  pissflaps  pissin  pissing  pissoff  poop porn porno pornography pornos prick  
+		 pisses  pissflaps  pissin  pissing  pissoff porn porno pornography pornos prick  
 		 pricks  pron pube pusse pussi pussies pussy  pussys  rectum retard rimjaw rimming  shit 
 		 s.o.b.  sadist schlong screwing scroat scrote scrotum semen sex  sh!+   sh!t  sht shag shagger 
 		 shaggin shagging shemale  shi+  shit shitdick shite shited shitey shitfuck shitfull shithead 

@@ -12,6 +12,9 @@ Latest stable release:
 
 In the model you want to check for profanity its as simple as long line in the model.
 
-    Include ProfanityFilter
-
+	class Article < ActiveRecord::Base
+		include ProfanityFilter
+	  attr_accessible :body, :title
+	end
+	
 This will ensure no record will be saved into the system.

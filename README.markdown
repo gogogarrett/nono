@@ -20,7 +20,7 @@ In the model you want to check for profanity its as simple as one line in the mo
 
 This will ensure no record will be saved into the system.
 
-    $ > Article.create(title: "<p>boob</p>", body: "<strong><em>Bo</em>ob</strong?")
+    $ > Article.create(title: "<p>boob</p>", body: "<p><em>b</em>oob</p>")
     $ (0.1ms)  begin transaction
     $ (0.1ms)  rollback transaction
     $  => #<Article id: nil, title: "<p>boob</p>", body: "<p><em>b</em>oob</p>", created_at: nil, updated_at: nil> 

@@ -1,13 +1,13 @@
-Profanity Filter
+NoNo
 ================
 
-Profanity Filter is a black-list based validator. Given a list of fields to check against, Profanity Filter will ensure no content with any profanity is entered into the system.
+NoNo is a simple Profanity Filter is a black-list based validator. Given a list of fields to check against, NoNo will ensure no content with any profanity is entered into the system.
 
 ## Installation ##
 
 Latest stable release:
 
-    gem "profanity_filter"
+    gem "nono"
 
 ## Usage ##
 

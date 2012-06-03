@@ -3,23 +3,30 @@ require "profanity_filter/banned_word"
 
 module ProfanityFilter
 
-  def self.included(base)
-    base.class_eval {
-      require 'sanitize' 
-      before_save :check_profanity
+  module ClassMethods
+    def check_profanity
+      require 'sanitize'
+      validate :is_profane?
+    end
+  end
 
-      def raise_error
-        errors.add(:base, "Profanity found. This prevented the record from saving.")
-      end
+  module InstanceMethods
+    def is_profane?
 
-      def check_profanity
-        banned_words = WORDS
-        if self.attributes.values.any? {|c| banned_words.include? Sanitize.clean(content).gsub(/\r\n\t/, "") }
-          self.raise_error
-          return false
+      self.attributes.values.select{|x| !x.nil? }.each do |c|
+        if c.class == String
+          if WORDS.include? Sanitize.clean(c).gsub(/\r\n\t/, "").gsub(" ", "")
+            errors.add(:base, "Profanity found. This prevented the record from saving.")
+            return false
+          end
         end
       end
-    }
+    end
+  end
+
+  def self.included(base)
+    base.send :extend, ClassMethods
+    base.send :include, InstanceMethods
   end
 end
 

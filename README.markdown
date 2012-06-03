@@ -11,10 +11,10 @@ Latest stable release:
 
 ## Usage ##
 
-In the model you want to check for profanity its as simple as long line in the model.
+In the model you want to check for profanity its as simple as one line in the model.
 
 	class Article < ActiveRecord::Base
-	 	include ProfanityFilter
+	 	check_profanity
 		attr_accessible :body, :title
 	end
 

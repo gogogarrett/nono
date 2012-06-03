@@ -1,7 +1,7 @@
 NoNo
 ================
 
-NoNo is a simple black-list profnaity filter. Given a list of fields to check against, NoNo will ensure no content with any profanity is entered into the system.
+NoNo is a simple black-list profanity filter. Given a list of fields to check against, NoNo will ensure no content with any profanity is entered into the system.
 
 ## Installation ##
 

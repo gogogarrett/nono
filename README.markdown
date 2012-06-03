@@ -7,7 +7,7 @@ NoNo is a simple Profanity Filter is a black-list based validator. Given a list 
 
 Latest stable release:
 
-    gem "nono"
+    gem "NoNo"
 
 ## Usage ##
 

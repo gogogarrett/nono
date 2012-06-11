@@ -43,6 +43,6 @@ module NoNo
 		 smegma smut snatch  son-of-a-bitch  spac spunk s_h_i_t ttte5 ttties teets teez testical 
 		 testicle tit titfuck tits titt tittie5 tittiefucker titties tittyfuck tittywank titwank 
 		 tosser turd tw4t twat twathead twatty twunt twunter v4gra vgra vagina viagra vulva w00se wang 
-		 wank wanker wanky whoar whore willies willy xrated xxx
+		 wank wanker wanky whoar whore willies willy xrated xxx php
 	)
 end

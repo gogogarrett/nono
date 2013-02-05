@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = NoNo::VERSION
   s.authors     = ["Garrett Heinlen"]
   s.email       = ["heinleng@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "http://gggarrett.com"
   s.summary     = %q{NoNo a simple profanity filter}
   #s.description = %q{}
 

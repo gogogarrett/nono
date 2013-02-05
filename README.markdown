@@ -13,10 +13,10 @@ Latest stable release:
 
 In the model you want to check for profanity its as simple as one line in the model.
 
-	class Article < ActiveRecord::Base
-	 	check_profanity
-		attr_accessible :body, :title
-	end
+  class Article < ActiveRecord::Base
+    check_profanity
+    attr_accessible :body, :title
+  end
 
 This will ensure no record will be saved into the system.
 
